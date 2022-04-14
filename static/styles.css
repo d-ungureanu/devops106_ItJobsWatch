@@ -14,7 +14,11 @@ nav .navbar-brand .black
     color: #000000;
 }
 
-
+/* colour of columns text */
+.column-text-white
+{
+  color: #ffffff;
+}
 .seperate {
     margin-left: 33%;
     margin-right: 33%;
