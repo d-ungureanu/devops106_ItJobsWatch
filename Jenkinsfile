@@ -9,8 +9,18 @@ pipeline {
   stages {
     stage('Cloning the project from GitHub') {
       steps {
-        git branch: 'jenkins',
-        url: 'https://github.com/d-ungureanu/devops106_ItJobsWatch.git'
+        checkout(
+          [
+            $class: 'GitSCM',
+            branches: [name: '*/jenkins'],
+            userRemoteConfigs: [
+              [
+              url: 'git@github.com:d-ungureanu/devops106_ItJobsWatch.git',
+              credentialsId: 'github_credentials'
+              ]
+            ]
+          ]
+        )
       }
     }
 
