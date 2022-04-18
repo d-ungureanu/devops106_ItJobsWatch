@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  environment {
+    IMAGE_NAME = "devops106/itjobswatch:0." + "$BUILD_NUMBER"
+  }
+
   stages {
     stage('Cloning the project from GitHub') {
       steps {
@@ -12,7 +16,7 @@ pipeline {
     stage('Build Docker Image') {
       steps {
         script {
-          DOCKER_IMAGE = docker.build 'devops106/itjobswatch'
+          DOCKER_IMAGE = docker.build IMAGE_NAME
         }
       }
     }
