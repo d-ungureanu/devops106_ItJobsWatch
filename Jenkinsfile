@@ -12,7 +12,17 @@ pipeline {
     stage('Build Docker Image') {
       steps {
         script {
-          docker.build 'devops106/itjobswatch'
+          DOCKER_IMAGE = docker.build 'devops106/itjobswatch'
+        }
+      }
+    }
+
+    stage('Push to DockerHub') {
+      steps {
+        script {
+          docker.withRegistry('', 'docker_hub_credentials') {
+            DOCKER_IMAGE.push()
+          }
         }
       }
     }
