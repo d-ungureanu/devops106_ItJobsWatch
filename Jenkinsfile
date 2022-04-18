@@ -9,20 +9,15 @@ pipeline {
   stages {
     stage('Cloning the project from GitHub') {
       steps {
-        checkout(
-          [
-            $class: 'GitSCM',
-            branches: [name: '*/jenkins'],
-            userRemoteConfigs: [
-              [
+        checkout([
+            $class: 'GitSCM', branches: [[name: '*/jenkins']],
+            userRemoteConfigs: [[
               url: 'git@github.com:d-ungureanu/devops106_ItJobsWatch.git',
               credentialsId: 'github_credentials'
-              ]
-            ]
-          ]
-        )
+              ]]
+          ])
+        }
       }
-    }
 
     stage('Build Docker Image') {
       steps {
