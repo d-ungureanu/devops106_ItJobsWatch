@@ -3,6 +3,7 @@ pipeline {
 
   environment {
     IMAGE_NAME = "devops106/itjobswatch:0." + "$BUILD_NUMBER"
+    DOCKER_CREDENTIALS = 'docker_hub_credentials'
   }
 
   stages {
@@ -24,7 +25,7 @@ pipeline {
     stage('Push to DockerHub') {
       steps {
         script {
-          docker.withRegistry('', 'docker_hub_credentials') {
+          docker.withRegistry('', DOCKER_CREDENTIALS) {
             DOCKER_IMAGE.push()
           }
         }
