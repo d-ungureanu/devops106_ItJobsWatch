@@ -12,7 +12,7 @@ pipeline {
     stage('Build Docker Image') {
       steps {
         script {
-          docker.build 'devops106/ItJobsWatch'
+          docker.build 'devops106/itjobswatch'
         }
       }
     }
