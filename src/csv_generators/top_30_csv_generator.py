@@ -12,4 +12,4 @@ class Top30CSVGenerator:
 
 
 if __name__ == '__main__':
-    print()
+    print(Top30CSVGenerator.generate_top_30_csv())
