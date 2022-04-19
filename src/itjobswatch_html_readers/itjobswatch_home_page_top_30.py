@@ -20,7 +20,10 @@ class ItJobsWatchHomePageTop30:
 
         for item in self._get_top_30_table_headers().find_all('th'):
             table_headers_list.append(item.text)
-        table_headers_list.pop(0)
+
+        print("--------------------THESE ARE THE HEADERS------------------")
+        print(table_headers_list)
+
 
         return table_headers_list
 
@@ -35,7 +38,7 @@ class ItJobsWatchHomePageTop30:
             job_list.append(job)
 
         job_list.pop(0)
-        return job_list
+        return job_list[:30]
 
 
 
