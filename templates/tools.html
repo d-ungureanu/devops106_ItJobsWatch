@@ -12,26 +12,23 @@
     We used a multiple number of tools to complete our final project.<br>
     Below, is a list of our team that has worked on this project and the role they've taken up across the duration of our sprints.
     </div>
+    <div class="center1">
     <div class="container">
-      <div class="row">
-        <div class=".col-md-">
-          
-          <img src="../img/jenkins.jpg" width="200" height="267" alt="jenkins">
-          <img src="../img/html.png" width="200" height="267" alt="html5">
-          <img src="../img/python.png" width="200" height="267" alt="python">
-          <img src="../img/docker.jpg" width="200" height="267" alt="docker">
-
-        </div>
-        <div class=".col-md-"></div>
-      </div>
-      <div class="row">
-        <div class=".col-md-"></div>
-        <div class=".col-md-"></div>
-        <div class=".col-md-"></div>
-      </div>
+      
       <div class="row">
         
+        <div class=".col-md-">
+          
+          <img src = "{{ url_for('static',filename= 'img/jenkins-img.jpg')}}" width="200" height="200" alt="jenkins">
+          <img src = "{{ url_for('static',filename= 'img/html.png')}}" width="200" height="200" alt="html">
+          <img src = "{{ url_for('static',filename= 'img/python.jpg')}}" width="200" height="150" alt="python">
+        </div>
+        <div class=".col-md-"> 
+          <img src = "{{ url_for('static',filename= '/img/docker.jpg')}}" width="200" height="200" alt="docker">
+          <img src = "{{ url_for('static',filename= '/img/aws.jpg')}}" width="200" height="200" alt="aws">
+        </div>
       </div>
     </div>
+  </div>
 
 {% endblock %}
