@@ -18,5 +18,9 @@ filepath = 'C://Users/emile/Downloads/ItJobsWatchTop30.csv'
 
 data = pd.read_csv(filepath, encoding = 'unicode_escape')
 data_json = json.loads(data.to_json(orient='records'))
+
 col.drop()
 col.insert_many(data_json)
+
+print(data_json)
+
