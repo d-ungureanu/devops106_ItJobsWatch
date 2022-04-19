@@ -19,10 +19,28 @@ pipeline {
         }
       }
 
+
     stage('Build Docker Image') {
       steps {
         script {
           DOCKER_IMAGE = docker.build IMAGE_NAME
+        }
+      }
+    }
+
+    stage('Testing the Code'){
+      steps{
+        script {
+          sh '''
+            docker run --rm -v $PWD/test-results:/reports --workdir / $IMAGE_NAME python -m pytest -v --junitxml=/reports/results.xml
+            ls $PWD/test-results
+          '''
+        }
+      }
+
+      post {
+        always {
+          junit testResults: '**/test-results/*.xml'
         }
       }
     }
