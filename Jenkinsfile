@@ -32,7 +32,7 @@ pipeline {
       steps{
         script {
           sh '''
-            docker run $IMAGE_NAME pytest 
+            docker run $IMAGE_NAME pytest
             '''
         }
       }
