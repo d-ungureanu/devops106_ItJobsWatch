@@ -47,7 +47,7 @@ class TestCSVGenerator:
         with open(TEST_RESOURCES_FOLDER + '/top_30_without_headers.csv') as top_30_without_headers:
             parsed_csv_file = csv.reader(top_30_without_headers)
             for line in parsed_csv_file:
-                if list_count < 30:
+                # if list_count < 30:
                     list_count += 1
 
         assert list_count == 30
@@ -57,7 +57,7 @@ class TestCSVGenerator:
         with open(TEST_RESOURCES_FOLDER + '/top_30_with_headers.csv') as top_30_with_headers:
             parsed_csv_file = csv.reader(top_30_with_headers)
             for line in parsed_csv_file:
-                if list_count < 31:
+                # if list_count < 31:
                     list_count += 1
 
         assert list_count == 31
@@ -67,7 +67,7 @@ class TestCSVGenerator:
         with open(os.path.expanduser('~/Downloads/') + 'ItJobsWatchTop30.csv') as top_30_without_headers:
             parsed_csv_file = csv.reader(top_30_without_headers)
             for line in parsed_csv_file:
-                if list_count < 30:
+                # if list_count < 30:
                     list_count += 1
 
         assert list_count == 30

@@ -25,4 +25,4 @@ class HttpManager:
 
 
 if __name__ == '__main__':
-    print(HtmlResponseManager(itjobswatch_home_page_test_file()).html)
+    print(HttpManager(itjobswatch_home_page_test_file()).html)
