@@ -32,7 +32,8 @@ pipeline {
       steps{
         script {
           sh '''
-            docker run $IMAGE_NAME pytest
+            docker run --rm -v $PWD/test-results:/reports --workdir /app $IMAGE_NAME python -m pytest -v --junitxml=/reports/results.xml
+            ls $PWD/test-results
             '''
         }
       }
