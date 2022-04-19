@@ -1,4 +1,11 @@
 /* Size for brand */
+html{
+  
+  
+  background: #f7f7f7;
+  background-repeat: no-repeat;
+  background-size: 1000%;
+}
 nav .navbar-brand
 {
     font-size: xx-large;
@@ -13,7 +20,30 @@ nav .navbar-brand .black
 {
     color: #000000;
 }
-
+.greeting-text-spacing{
+  border: 1px solid black;
+  width: 900px;
+  height: 100px;
+  margin-left: 15%;
+  margin-right: 50%;
+  font-size:12px;
+  background-color: rgb(254, 254, 254);
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+.name-position {
+  font-weight: bold;
+  font-size: 10px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 8px;
+}
 /* colour of columns text */
 .column-text-white
 {
