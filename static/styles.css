@@ -44,15 +44,7 @@ nav .navbar-brand .black
   width: 50%;
 
 }
-.indiv-background{
-  background-color: #ffffff;
-  border-radius: 10px;
-  width: 45%;
-  text-align: center;
-  float: center;
-  margin-top: 10px;
 
-}
 .photo{
   position: relative;
   top: 10px;
@@ -65,6 +57,25 @@ nav .navbar-brand .black
   width: 100%;
   
 }
+
+.indiv-background{
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  float: center;
+  margin-top: 10px;
+
+}
+.spacing1 {
+  margin-top: 20px;
+  display:inline-table;
+  margin-left: 20%;
+  margin-right: 10%;
+  width: 60%;
+  
+}
+
 
 
 .center1 {
