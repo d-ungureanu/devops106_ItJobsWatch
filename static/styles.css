@@ -2,7 +2,7 @@
 body{ 
   background: #e8e8e8;
   background-size: 100%;
-  position:absolute;
+  position:fixed;
 }
 nav .navbar-brand
 {
@@ -23,7 +23,7 @@ nav .navbar-brand .black
   width: 900px;
   height: 100px;
   margin-left: 15%;
-  margin-right: 50%;
+  
   font-size:12px;
   background-color: rgb(254, 254, 254);
   padding-top: 30px;
@@ -32,18 +32,8 @@ nav .navbar-brand .black
   padding-left: 80px;
   text-align: center;
 }
-.name-position {
-  font-weight: bold;
-  font-size: 10px;
-  border: #000000;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 
-}
+
 
 .photo{
   position: relative;
@@ -78,13 +68,7 @@ nav .navbar-brand .black
 
 
 
-.center1 {
-  margin-top: 20px;
-  display: block;
-  margin-left: 30%;
-  margin-right: 70%;
-  width: 100%;
-}
+
 .positioning-teams{
 
   margin-top: 20px;
@@ -100,11 +84,7 @@ nav .navbar-brand .black
   text-align: center;
   float:center;
 }
-/* colour of columns text */
-.column-text-white
-{
-  color: #ffffff;
-}
+
 .seperate {
     margin-left: 33%;
     margin-right: 33%;
