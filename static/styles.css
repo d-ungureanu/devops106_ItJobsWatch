@@ -47,6 +47,12 @@ nav .navbar-brand .black
   background-color: #ffffff;
   border-radius: 10px;
   width: 45%;
+  text-align: center;
+  float: center;
+}
+.photo{
+  position: relative;
+  top: 10px;
 }
 .spacing {
   margin-top: 20px;
@@ -87,9 +93,4 @@ nav .navbar-brand .black
 .seperate {
     margin-left: 33%;
     margin-right: 33%;
-}
-.name-centering{
- float: center;
- margin-right: 5%;
-text-align: center;
 }
