@@ -1,4 +1,9 @@
 /* Size for brand */
+body{ 
+  background: #e8e8e8;
+  background-size: 100%;
+  position:absolute;
+}
 nav .navbar-brand
 {
     font-size: xx-large;
@@ -13,7 +18,94 @@ nav .navbar-brand .black
 {
     color: #000000;
 }
+.greeting-text-spacing{
+  border: 1px solid black;
+  width: 900px;
+  height: 100px;
+  margin-left: 15%;
+  margin-right: 50%;
+  font-size:12px;
+  background-color: rgb(254, 254, 254);
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  text-align: center;
+}
+.name-position {
+  font-weight: bold;
+  font-size: 10px;
+  border: #000000;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 
+}
+
+.photo{
+  position: relative;
+  top: 10px;
+}
+.spacing {
+  margin-top: 20px;
+  display:inline-table;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;
+  
+}
+
+.indiv-background{
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  float: center;
+  margin-top: 10px;
+
+}
+.spacing1 {
+  margin-top: 20px;
+  display:inline-table;
+  margin-left: 20%;
+  margin-right: 10%;
+  width: 60%;
+  
+}
+
+
+
+.center1 {
+  margin-top: 20px;
+  display: block;
+  margin-left: 30%;
+  margin-right: 70%;
+  width: 100%;
+}
+.positioning-teams{
+
+  margin-top: 20px;
+  display:flex
+  
+}
+
+
+
+
+
+
+
+.center-meet-the-team {
+  display:flex;
+  margin-left: 500px;
+  margin-right: 250px;
+  width: 50%;
+  text-align: center;
+  float:center;
+}
 /* colour of columns text */
 .column-text-white
 {
