@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Search
+{% endblock %}
+
+{% block main %}
+<div class="topdiv">
+    <h2 class="center-meet-the-team">Tools</h2>
+</div>
+<div class="greeting-text-spacing">
+    We used a multiple number of tools to complete our final project.<br>
+    Below, is a list of our team that has worked on this project and the role they've taken up across the duration of our sprints.
+    </div>
+    
+      <div class="container">
+        <div class= "spacing">
+      <div class="row">
+        <div class="col-sm-4">
+
+          <img src = "{{ url_for('static',filename= 'img/jenkins-img.jpg')}}" width="200" height="200" alt="jenkins">
+        </div>
+        <div class="col-sm-4">
+         
+          <img src = "{{ url_for('static',filename= 'img/html.png')}}" width="200" height="200" alt="html">
+        </div>
+        <div class="col-sm-4">
+          Python<br>
+          <img src = "{{ url_for('static',filename= 'img/python.jpg')}}" width="200" height="200" alt="python">
+         
+          </div>
+        </div>
+      
+        <div class="row">
+        <div class="col-sm-4">
+          <img src = "{{ url_for('static',filename= '/img/docker.jpg')}}" width="200" height="200" alt="docker">
+        </div>
+
+        <div class="col-sm-4">
+          <img src = "{{ url_for('static',filename= '/img/aws.jpg')}}" width="200" height="200" alt="aws">
+        </div>
+        <div class="col-sm-4">
+          <img src = "{{ url_for('static',filename= '/img/terraform.jpg')}}" width="250" height="200" alt="terraform">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

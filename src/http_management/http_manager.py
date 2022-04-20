@@ -15,6 +15,7 @@ class HttpManager:
             self.html = open(file_location_or_url_location).read()
         elif 'http' in file_location_or_url_location:
             response = requests.get(file_location_or_url_location)
+            print(response)
             self.url_response = response
             self.html = response.content.decode("utf-8")
         else:

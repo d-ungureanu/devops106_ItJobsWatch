@@ -10,6 +10,5 @@ class Top30CSVGenerator:
                 writer.writerow(headers_array)
             writer.writerows(top_30_array)
 
-
 if __name__ == '__main__':
     print()
