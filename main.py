@@ -1,4 +1,5 @@
-from src.cmd_user_interface import CmdUserInterface
+import mongo_csv
 
 if __name__ == '__main__':
-    CmdUserInterface()
+    mongo_csv.csv_to_db()
+

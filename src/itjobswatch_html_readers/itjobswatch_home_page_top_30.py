@@ -43,5 +43,5 @@ class ItJobsWatchHomePageTop30:
 
 
 if __name__ == '__main__':
-    print(ItJobsWatchHomePageTop30(itjobswatch_home_page_test_file()))
+    print(ItJobsWatchHomePageTop30(itjobswatch_home_page_test_file()).get_top_30_table_elements_into_array())
 
