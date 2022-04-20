@@ -21,6 +21,7 @@ class ItJobsWatchHomePageTop30:
 
         for item in self._get_top_30_table_headers().find_all('th'):
             table_headers_list.append(item.text)
+        
         return table_headers_list
 
     def get_top_30_table_elements_into_array(self):

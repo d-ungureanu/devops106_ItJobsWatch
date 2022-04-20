@@ -23,7 +23,7 @@ class TestHtmlObjectManager:
     def test_html_manager_status_response_is_200(self, html_manager_object):
         assert html_manager_object.url_response.status_code == 200
 
-    # def test_html_manager_returns_html_from_url(self, html_manager_object):
-    #     print(html_manager_object.html)
-    #     assert 'Tracking the IT job market' in html_manager_object.html
+    def test_html_manager_returns_html_from_url(self, html_manager_object):
+        print(html_manager_object.html)
+        assert 'IT Jobs Watch' in html_manager_object.html
 

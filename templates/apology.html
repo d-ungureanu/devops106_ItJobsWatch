@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+<div">
+<h1 style="text-align: center;">Sorry but there is no matching Job/Role on the website </h1>
+<img src = "{{ url_for('static',filename= 'image/no_one_else.gif')}}" width="25%" height="25%" alt="Spartan" class="center">
+</div>
+{% endblock %}
