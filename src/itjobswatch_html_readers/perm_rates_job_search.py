@@ -58,7 +58,7 @@ class PermRatesJobSearch:
         return {"headers": self.get_summary_headers(),
                 "Rank": self.get_rank(),
                 "Rank change year on year": self.get_rank_change_year_on_year(),
-                "median_annual_salary_london_exc": self.get_median_salary_excluding_london()
+                "median_annual_salary_london_exc": self.get_median_salary_excluding_london(),
                 "Number of salaries quoted": self.get_number_of_salaries_quoted()}
                 # "10th_percentile": self.get_salary_10th_percentile(),
                 # "90th_percentile": self.get_salary_90th_percentile()
