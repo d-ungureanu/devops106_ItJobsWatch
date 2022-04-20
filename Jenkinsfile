@@ -10,7 +10,7 @@ pipeline {
     stage('Cloning the project from GitHub') {
       steps {
         checkout([
-            $class: 'GitSCM', branches: [[name: '*/jenkins']],
+            $class: 'GitSCM', branches: [[name: '*/dev']],
             userRemoteConfigs: [[
               url: 'git@github.com:d-ungureanu/devops106_ItJobsWatch.git',
               credentialsId: 'github_credentials'
