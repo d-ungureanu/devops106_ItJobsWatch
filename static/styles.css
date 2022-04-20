@@ -2,7 +2,7 @@
 body{ 
   background: #e8e8e8;
   background-size: 100%;
-  position:fixed;
+  position:absolute;
 }
 nav .navbar-brand
 {
