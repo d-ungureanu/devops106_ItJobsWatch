@@ -61,9 +61,8 @@ nav .navbar-brand .black
 .indiv-background{
   background-color: #ffffff;
   border-radius: 10px;
-  width: 100%;
+  width: 95%;
   text-align: center;
-  float: center;
   margin-top: 10px;
   font-size: 10px;
 
@@ -71,9 +70,9 @@ nav .navbar-brand .black
 .spacing1 {
   margin-top: 20px;
   display:inline-table;
-  margin-left: 15%;
+  margin-left: 13%;
   margin-right: 10%;
-  width: 95%;
+  width: 100%;
   
 }
 
