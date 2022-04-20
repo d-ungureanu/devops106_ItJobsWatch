@@ -48,29 +48,18 @@ class PermRatesJobSearch:
     def get_percentage_of_jobs_in_uk(self):
         return self.summary_table_data_selector("As % of all permanent jobs advertised in the UK")
 
-    # def get_permanent_jobs_citing_name(self, name):
-    #     return self.summary_table_data_selector(f"Permanent jobs citing {name}")
-
-    # def get_median_annual_salary(self):
-    #     return self.summary_table_data_selector("Median annual salary (50 Percentile)")
-
     def get_number_of_salaries_quoted(self):
         return self.summary_table_data_selector("Number of salaries quoted")
 
     def get_median_salary_excluding_london(self):
         return self.summary_table_data_selector("UK excluding London median annual salary")
 
-    # def get_salary_90th_percentile(self):
-    #     return self.summary_table_data_selector("90th Percentile")
-    #
-    # def get_salary_10th_percentile(self):
-    #     return self.summary_table_data_selector("10th Percentile")
-
     def get_permanent_salary_data(self):
         return {"headers": self.get_summary_headers(),
                 "Rank": self.get_rank(),
                 "Rank change year on year": self.get_rank_change_year_on_year(),
-                "median_annual_salary_london_exc": self.get_median_salary_excluding_london()}
+                "median_annual_salary_london_exc": self.get_median_salary_excluding_london()
+                "Number of salaries quoted": self.get_number_of_salaries_quoted()}
                 # "10th_percentile": self.get_salary_10th_percentile(),
                 # "90th_percentile": self.get_salary_90th_percentile()
 
