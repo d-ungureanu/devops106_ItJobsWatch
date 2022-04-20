@@ -1,6 +1,6 @@
 /* Size for brand */
 body{ 
-  background: #f7f7f7;
+  background: #e8e8e8;
   background-size: 100%;
   position:absolute;
 }
@@ -43,15 +43,35 @@ nav .navbar-brand .black
   width: 50%;
 
 }
+.indiv-background{
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 45%;
+}
+.spacing {
+  margin-top: 20px;
+  display:inline-table;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;
+  
+}
+
 .center1 {
   margin-top: 20px;
   display: block;
   margin-left: 30%;
   margin-right: 70%;
   width: 100%;
-
-
 }
+.positioning-teams{
+
+  margin-top: 20px;
+  display:flex
+  
+}
+
+
 .center-meet-the-team {
   display: block;
   margin-left: 500px;
@@ -69,5 +89,7 @@ nav .navbar-brand .black
     margin-right: 33%;
 }
 .name-centering{
-  padding-left: 15px;
+ float: center;
+ margin-right: 5%;
+text-align: center;
 }
