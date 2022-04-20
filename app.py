@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask,render_template, request
 from requests import post
 from src.itjobswatch_html_readers.itjobswatch_home_page_top_30 import ItJobsWatchHomePageTop30
@@ -22,7 +21,7 @@ def home():
             site = ItJobsWatchHomePageTop30(x)
             results = site.get_top_30_table_elements_into_array()
             return render_template('index.html', results = results)
-           
+
     else:
         ### Home page will show standard top 30 in GET request ###
         results = ItJobsWatchHomePageTop30(itjobswatch_home_page_url()).get_top_30_table_elements_into_array()
@@ -44,8 +43,8 @@ app = Flask(__name__)
 @app.route('/')
 
 def home():
-    
-   
+
+
     return render_template('tools.html')
 
 
@@ -54,4 +53,3 @@ def home():
 if __name__ == "__main__":
 
     app.run(debug = True)
->>>>>>> bb065e2d8c777653265b0e36b039f6d73e46c77e
