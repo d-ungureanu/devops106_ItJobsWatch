@@ -13,4 +13,4 @@ ADD definitions.py /app/definitions.py
 ADD setup.py /app/setup.py
 ADD config_manager.py /app/config_manager.py
 WORKDIR /app
-CMD python main.py
+CMD python app/main.py
