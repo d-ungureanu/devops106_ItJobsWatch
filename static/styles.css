@@ -65,6 +65,7 @@ nav .navbar-brand .black
   text-align: center;
   float: center;
   margin-top: 10px;
+  font-size: 10px;
 
 }
 .spacing1 {
@@ -72,7 +73,7 @@ nav .navbar-brand .black
   display:inline-table;
   margin-left: 15%;
   margin-right: 10%;
-  width: 80%;
+  width: 95%;
   
 }
 
