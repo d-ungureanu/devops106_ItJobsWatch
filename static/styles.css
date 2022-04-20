@@ -30,6 +30,7 @@ nav .navbar-brand .black
   padding-right: 20px;
   padding-bottom: 50px;
   padding-left: 80px;
+  text-align: center;
 }
 .name-position {
   font-weight: bold;
@@ -49,6 +50,8 @@ nav .navbar-brand .black
   width: 45%;
   text-align: center;
   float: center;
+  margin-top: 10px;
+
 }
 .photo{
   position: relative;
@@ -62,6 +65,7 @@ nav .navbar-brand .black
   width: 100%;
   
 }
+
 
 .center1 {
   margin-top: 20px;
@@ -78,12 +82,18 @@ nav .navbar-brand .black
 }
 
 
-.center-meet-the-team {
-  display: block;
-  margin-left: 500px;
-  margin-right: 500px;
-  width: 50%;
 
+
+
+
+
+.center-meet-the-team {
+  display:flex;
+  margin-left: 500px;
+  margin-right: 250px;
+  width: 50%;
+  text-align: center;
+  float:center;
 }
 /* colour of columns text */
 .column-text-white
