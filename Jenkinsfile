@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    IMAGE_NAME = "devops106/itjobswatch:0." + "$BUILD_NUMBER"
+    IMAGE_NAME = "devops106/itjobswatch:1." + "$BUILD_NUMBER"
     DOCKER_CREDENTIALS = 'docker_hub_credentials'
   }
 
