@@ -14,8 +14,30 @@ nav .navbar-brand .black
     color: #000000;
 }
 
-
-.seperate {
-    margin-left: 33%;
-    margin-right: 33%;
+/* colour of columns text */
+.column-text-white
+{
+  color: #ffffff;
 }
+.sides {
+    margin-left: 9.25%;
+    margin-right: 9.25%;
+}
+
+.topdiv {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h6 {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

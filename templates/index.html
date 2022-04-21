@@ -6,8 +6,76 @@
 
 
 {% block main %}
-    <div class="mb-3">
-         <h2>Top 30 Jobs</h2>     
-    </div>
 
+<div class="topdiv">
+    <h2>IT Jobs Watch Scrapper</h2>
+    <div style="margin-top: 1.5%;"></div>
+    <h5 style="margin-bottom: 1.5%;">No need to scroll through a labyrinth of unneccessary information when you can get everything you need in one or two clicks <div class="btn-group dropend"></h5>
+        <div class="d-grid gap-2 col-6 mx-auto" style="float: left;">
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" name="category" style="font-weight:bold; width: 50%">Categories</button>
+            <ul class="dropdown-menu">
+                <div class="list-group">
+                    <form action="" method="post">
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="All" value="trying">All</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Application_Platforms">Application Platforms</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Applications">Applications</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Buisness_Applications">Buisness Applications</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Cloud_Services">Cloud Services</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Communications_&_Networking">Communications & Networking</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Database_&_Business_Intelligence">Database & Business Intelligence</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Development_Applications">Development Applications</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="General">General</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Job_Titles">Job Titles</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Libraries_Frameworks_&_Software_Standards">Libraries, Frameworks & Software Standards</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Miscellaneous">Miscellaneous</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Operating_Systems">Operating Systems</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Processes_&_Methodologies">Processes & Methodologies</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Programming_Languages">Programming Languages</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Qualifications">Qualifications</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Quality_Assurance_&_Compliance">Quality Assurance & Compliance</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="System_Software">System Software</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="System_Management">System Management</button>
+                    <button input type="submit" class="list-group-item list-group-item-action list-group-item-info" name="Vendors">Vendors</button>
+                    </form>
+                </div>
+            </ul>
+            <button type="button" class="btn btn-outline-info" style="font-weight:bold; float:right">Download The Top 30 Jobs </button>
+            <button type="button" class="btn btn-outline-info" style="font-weight:bold; float:right" href="/perm">Search for Permanent Jobs </button>
+            <button type="button" class="btn btn-outline-info" style="font-weight:bold; float:right" href="/cont" >Search for Contract Jobs  </button>
+            
+           
+          </div>
+          <div style="margin-top: 1.5%;"></div>
+          </div>
+        </form>
+
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr style="text-align: center;">
+                    <th>Description</th>
+                    <th>Rank 6 Months <br>to 15 Apr 2022</th>
+                    <th>Rank <br>YoY Change</th>
+                    <th>Median Salary</th>
+                    <th>Median Salary <br> Change</th>
+                    <th>Historical <br>Absolute & Relative <br>Jobs Vacancies</th>
+                    <th>Live Jobs</th>
+                </tr>
+            </thead>
+            <tbody style="text-align: center;">
+                {% for result in results %}
+                <tr>
+                    <td>{{result[0]}}</td>
+                    <td>{{result[1]}}</td>
+                    <td>{{result[2]}}</td>
+                    <td>{{result[3]}}</td>
+                    <td>{{result[4]}}</td>
+                    <td>{{result[5]}}</td>
+                    <td>{{result[6]}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+</div>
 {% endblock %}

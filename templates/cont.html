@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Search
+{% endblock %}
+
+{% block main %}
+<div class="topdiv">
+    <h2>Custom Search</h2>
+    <div style="margin-top: 1.5%;"></div>
+    <h5 style="margin-bottom: 2%;">Sometime your looking for something more specific and were here to help, simply input the name of the Contract job or role you wish to find out more about below:</h5>
+    
+    <form action="" method="post">
+        <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Job/Role" aria-label="Job/Role" aria-describedby="button-addon2" name="category">
+    <button class="btn btn-outline-info" type="submit" id="button-addon2">Find me a Job</button>
+        </div>
+    </form>
+     
+    <h5> Contract Jobs</h5>
+    
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr style="text-align: center;">
+                    <th>Description</th>
+                    <th>6 months to <br> Apr 2022</th>
+                    <th>Same period <br> 2021</th>
+                    <th>Same period <br> 2020</th>
+                </tr>
+            </thead>
+                <tbody style="text-align: center;">
+                    {% for result in results %}
+                    <tr>
+                        <td>{{result[0]}}</td>
+                        <td>{{result[1]}}</td>
+                        <td>{{result[2]}}</td>
+                        <td>{{result[3]}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+        </table>
+</div>
+{% endblock %}

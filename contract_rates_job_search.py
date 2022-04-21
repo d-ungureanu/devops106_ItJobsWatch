@@ -1,3 +1,5 @@
+from cgitb import text
+import string
 from bs4 import BeautifulSoup
 from src.http_management.http_manager import HttpManager
 from config_manager import itjobswatch_contract_search_test_page
@@ -35,27 +37,35 @@ class ContractRatesJobSearch:
 
         return captured_data
 
+    def remove_sup(self):
+        x = self.summary_table()
+        for element in x.find_all('sup'):
+            element.extract()
+        return x
+
+
+    def get_rank(self):
+        return self.summary_table_data_selector("Rank")
+
+    def get_rank_change_year_on_year(self):
+        return self.summary_table_data_selector("Rank change year-on-year")
+
     def get_median_day_rate(self):
-        return self.summary_table_data_selector("UK median daily rate")
+        return self.summary_table_data_selector("Median hourly rate")
 
     def get_median_day_rate_excluding_london(self):
         return self.summary_table_data_selector("UK excluding London median daily rate")
 
-    def get_day_rate_90th_percentile(self):
-        return self.summary_table_data_selector("90th Percentile")
-
-    def get_day_rate_10th_percentile(self):
-        return self.summary_table_data_selector("10th Percentile")
 
     def get_day_rate_data(self):
         return {"headers": self.get_summary_headers(),
+                "Rank" : self.get_rank(),
+                "Rank change year-on-year" : self.get_rank_change_year_on_year(),
                 "median_day_rate": self.get_median_day_rate(),
                 "median_day_rate_London_exc": self.get_median_day_rate_excluding_london(),
-                "10th_percentile": self.get_day_rate_10th_percentile(),
-                "90th_percentile": self.get_day_rate_90th_percentile()}
+        }
 
 if __name__ == '__main__':
 
-    print(ContractRatesJobSearch(itjobswatch_contract_search_test_page()).get_day_rate_data())
-
-
+    print(ContractRatesJobSearch("https://www.itjobswatch.co.uk/contracts/uk/python.do").get_day_rate_data())
+    
