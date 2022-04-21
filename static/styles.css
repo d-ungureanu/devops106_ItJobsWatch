@@ -41,3 +41,58 @@ h6 {
     margin-right: auto;
     width: 50%;
   }
+  
+  body{ 
+    background: #e8e8e8;
+    background-size: 100%;
+    position:absolute;
+  }
+  .greeting-text-spacing{
+    border: 1px solid black;
+    width: 900px;
+    height: 100px;
+    margin-left: 15%;
+  
+    font-size:12px;
+    background-color: rgb(254, 254, 254);
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    text-align: center;
+  }
+  .spacing1 {
+    margin-top: 20px;
+    display:inline-table;
+    margin-left: 13%;
+    margin-right: 10%;
+    width: 100%;
+  }
+  .spacing {
+    margin-top: 20px;
+    display:inline-table;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+  
+  }
+  .indiv-background{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 95%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .center-meet-the-team {
+    display:flex;
+    margin-left: 500px;
+    margin-right: 250px;
+    width: 50%;
+    text-align: center;
+    float:center;
+  }
+  .photo{
+    position: relative;
+    top: 10px;
+  }
