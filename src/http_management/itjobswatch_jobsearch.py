@@ -1,6 +1,6 @@
 from src.http_management.itjobswatch_jobsearch_url_factory import JobSearchManager
 from src.itjobswatch_html_readers.perm_rates_job_search import PermRatesJobSearch
-from src.itjobswatch_html_readers.contract_rates_job_search import ContractRatesJobSearch
+from contract_rates_job_search import ContractRatesJobSearch
 
 
 class JobSearch(JobSearchManager):

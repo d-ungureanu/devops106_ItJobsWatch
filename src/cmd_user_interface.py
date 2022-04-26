@@ -57,7 +57,6 @@ class CmdUserInterface:
         elif int(option_selected) == 2:
             top_30 = ItJobsWatchHomePageTop30(itjobswatch_home_page_url())
             Top30CSVGenerator().generate_top_30_csv(top_30.get_top_30_table_elements_into_array(), os.path.expanduser('~/Downloads/'), 'ItJobsWatchTop30.csv', top_30.get_table_headers_array())
-        elif int(option_selected) == 3:
             self.menu_control()
         else:
             print('Please select an option from the menu or type exit')

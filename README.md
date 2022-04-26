@@ -1,4 +1,4 @@
-# IT Jobs Watch Data
+# IT Jobs Watch Data WEB SCRAPER
 
 ## Introduction
 The aim of this project is to create a simple service that can scrape useful data from ITJobswatch.
@@ -6,7 +6,7 @@ The aim of this project is to create a simple service that can scrape useful dat
 ## Current Scope
 At present the app is set up to be cloned and used to simply scrape the below services:
 
-1. Home page top 30 job/roles / skills which can be found [here](https://www.itjobswatch.co.uk/Contract-IT-Job-Market/"target="_blank)
+1. Home page top 30 job/roles / skills which can be found [here]()
 
 The aim will be to expand this to further services such as:
 
